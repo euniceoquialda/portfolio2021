@@ -1,0 +1,436 @@
+/* 
+Fonts:font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif; */
+
+/* Color Palette
+black = #252525
+deep violet - #6930c3
+magentish - #93329e
+bluegreen - #64dfdf
+light bluegreen - #80ffdb
+*/
+
+/* Font color */
+
+.black-font {
+    color: #353535;
+}
+
+.violet-font {
+    color: #6930c3;
+    }
+
+.mgnta-font {
+    color: #93329e;
+}
+
+.bgreen-font {
+    color: #64dfdf;
+}
+
+.bgreenlight-font {
+    color: #80ffdb;
+}
+
+/* Fonts */
+
+.poppins {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.raleway {
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/* background  */
+
+.bg-gray {
+    background-color: #757575;
+}
+
+.bg-darkviolet {
+    background-color: #4e2197;
+}
+
+.bg-violet {
+    background-color: #6930c3;
+}
+
+.bg-lightviolet {
+    background-color: #f3edfd;
+}
+
+.bg-mgnta {
+    background-color: #93329e;
+}
+
+.bg-bgreenlight {
+    background-color: #80ffdb;
+}
+
+.bg-linear-violet {
+    background:linear-gradient(   #93329e, #6930c3);
+}
+
+.bg-linear-mgnta {
+    background:linear-gradient( #6930c3, #93329e);
+}
+
+/* utilies */
+
+.pt-6em {
+    padding-top: 6em;
+}
+
+.pb-6em {
+    padding-bottom: 6em;
+}
+
+.mt-n6em {
+    margin-top: -6em;
+}
+
+.mt-n10em {
+    margin-top: -10em;
+}
+
+/* .noselect */
+.noselect {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* button */
+.custom-btn {
+
+    padding: .5em 1em;
+    font-weight: 700;
+    border-radius: .5em;
+}
+
+.custom-btn:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.third-section .custom-btn:hover {
+    background-color: #93329e;
+}
+
+/* a */
+
+a:hover {
+    text-decoration: none;
+}
+
+
+
+/* Navbar */
+#site-logo {
+    width: 4em;
+}
+
+header li {
+    text-transform: uppercase;
+    padding: 0 1em 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: #6930c3;
+}
+
+
+/* Home page */
+/* Main */
+
+/* alert animation */
+
+.alert-container {
+    position: relative;
+}
+
+.custom-fade-in {
+    animation: fadeIn ease 1s;
+    position: absolute;
+    z-index: 1;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity:0;
+        margin-top: -.2em;
+    }
+    100% {
+        opacity:1;
+        /* margin-top: 2em; */
+    }
+    }
+
+
+.jumbotron h1 {
+
+    color: black;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #6930c3;
+
+
+}
+
+.jumbotron {
+    position: relative;
+    background-image: url('../img/backgrounds/bg-shapes.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    object-fit: cover;
+}
+
+/* For the svg wave on the jumbotron */
+.jumbotron::after {
+    content: '';
+    position: absolute;
+    background: url(../img/waves/top-wave.svg);
+    background-size: cover;
+    width: 100%;
+    bottom: -200px;
+    left: 0;
+    height: 220px;
+    overflow: hidden;
+}
+
+/* .social-side { */
+    position: absolute;
+    left: 20px;
+    top: 150px;
+    color: #6930c3;
+    font-size: 1.5em;
+    z-index: 3;
+}
+
+/* shapes */
+.shapes {
+    position: absolute;
+    width: 2em;
+    height: auto;
+    opacity: 1;
+}
+/* circle bgreen */
+.shape-one {
+    top: 5px;
+    right: 1px;
+    animation-name: roll-to-left;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+
+
+/* half circle bgreen */
+.shape-two {
+    top: 25px;
+    left: 1px;
+    animation-name: roll-to-right;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+/* half circle purple */
+.shape-three {
+    width: 1em;
+    bottom: 2000px;
+    right: 1px;
+    animation-name: roll-to-left;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    
+
+}
+
+/* quarter circle purple */
+.shape-four {
+    width: 1em;
+    bottom: 1px;
+    right: 1px;
+    animation-name: roll-to-left;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+/* rectangle purple */
+.shape-five {
+    bottom: 10px;
+    right: 100px;
+    animation-name: roll-to-left;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+/* square purple */
+.shape-six {
+    width: .7em;
+    top: 150px;
+    left: 2px;
+    animation-name: roll-to-right;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+/* wave  */
+.shape-seven {
+    top: 90px;
+    left: 2px;
+    animation-name: roll-to-right;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    
+}
+
+/* shape animation */
+
+@keyframes roll-to-left {
+    25% {
+        margin-right: 25% ;
+        margin-bottom: 10%;
+        width: .5em;
+        transform: rotate(90deg);
+    }
+
+    50% {
+        margin-right: 55% ;
+        width: .7em;
+        transform: rotate(180deg);
+    }
+
+    75% {
+        margin-right: 75% ;
+        width: .5em;
+        margin-bottom: 10%;
+        transform: rotate(270deg);
+    }
+
+    100% {
+        margin-right: 99% ;
+        width: 1em;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes roll-to-right {
+    25% {
+        margin-left: 25% ;
+        margin-bottom: 10%;
+        width: .5em;
+        transform: rotate(360deg);
+    }
+
+    50% {
+        margin-left: 55% ;
+        width: 1em;
+        transform: rotate(270deg);
+    }
+
+    75% {
+        margin-left: 75% ;
+        width: 1.2em;
+        margin-bottom: 10%;
+        transform: rotate(180deg);
+    }
+
+    100% {
+        margin-left: 99% ;
+        width: 1em;
+        transform: rotate(90deg);
+    }
+}
+
+
+/* Project section */
+
+/* SVG wave on project section */
+.wave-two {
+    content: '';
+    background: url(../img/waves/second-wave.svg);
+    background-size: cover;
+    width: 100%;
+    left: 0;
+    height: 30em;
+    margin-top: -1em;
+
+    overflow: hidden;
+}
+
+
+
+/* Contact section */
+
+/* SVG wave on contact section */
+.wave-three {
+    content: '';
+    background: url('../img/waves/third-wave.svg');
+    background-size: cover;
+    width: 100%;
+    /* left: 0; */
+    height: 25em;
+    margin-top: -10em;
+    /* margin-bottom: 5em; */
+    /* overflow: hidden; */
+    /* margin-top: -2em; */
+}
+
+#site-logo-bottom {
+    width: 4em;
+}
+
+
+/* ABOUT PAGE */
+
+.profile img {
+    width: 10em;
+}
+
+.icons i {
+    font-size: 2em;
+}
+
+.icons ul {
+    padding: 0;
+    margin: 0;
+}
+.icons li {
+    list-style-type: none;
+    display: block;
+    width: 7em;
+    padding: 1em;
+}
+
